@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import isPropValid from "@emotion/is-prop-valid";
 
 export const Item = styled.li`
     width: calc((100% - 3 * 29px) / 4);
@@ -11,13 +12,24 @@ export const ImageItem = styled.img`
     margin-bottom: 14px;
 `;
 
-export const ButtonAddFavorite = styled.button`
+export const ButtonAddFavorite = styled.button.withConfig({
+    shouldForwardProp: (prop) => isPropValid(prop) && prop !== "favorite",
+})`
     background-color: transparent;
     border-color: transparent;
     position: absolute;
     right: 5%;
     top: 14px;
     cursor: pointer;
+    transition: all 0.5s;
+
+    & > svg {
+        fill: ${({ favorite }) => favorite && "var(--blue)"};
+
+        & > path {
+            stroke: ${({ favorite }) => favorite && "var(--blue)"};
+        }
+    }
 `;
 
 export const WrapperNameCar = styled.div`

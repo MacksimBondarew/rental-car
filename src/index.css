@@ -10,6 +10,7 @@
     --white: #fff;
     --color-other-information: rgba(18, 20, 23, 0.5);
     --color-other-information-row: rgba(18, 20, 23, 0.10);
+    --background-condition-block: #F9F9F9;
     color: var(--black);
     background-color: var(--white);
 

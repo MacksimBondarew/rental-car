@@ -1,21 +1,15 @@
 import { useState } from "react";
-import { useSelector } from "react-redux";
-import { getItems } from "../../redux/cars/selectors";
+import PropTypes from "prop-types";
 import ItemCar from "../ItemCar/ItemCar";
 import { ButtonLoadMore, List } from "./ListCars.styled";
 
-export default function ListCars() {
-    const cars = useSelector(getItems);
-
-    // Стан для сторінки та кількості елементів на сторінці
+export default function ListCars({ cars }) {
     const [currentPage, setCurrentPage] = useState(1);
     const itemsPerPage = 8;
 
-    // Вираховуємо індекс першого та останнього елементів на поточній сторінці
     const indexOfLastItem = currentPage * itemsPerPage;
     const currentItems = cars.slice(0, indexOfLastItem);
 
-    // Обробник кліку на кнопку "Показати ще"
     const handleShowMoreClick = () => {
         setCurrentPage(currentPage + 1);
     };
@@ -23,9 +17,9 @@ export default function ListCars() {
     return (
         <div>
             <List>
-                {currentItems.map((car) => (
+                {currentItems.map((car, index) => (
                     <ItemCar
-                        key={car.id}
+                        key={index + 1}
                         id={car.id}
                         year={car.year}
                         make={car.make}
@@ -37,6 +31,8 @@ export default function ListCars() {
                         rentalCompany={car.rentalCompany}
                         typeCar={car.type}
                         functionalities={car.functionalities}
+                        car={car}
+                        favorite={car.favorite}
                     />
                 ))}
             </List>
@@ -46,3 +42,7 @@ export default function ListCars() {
         </div>
     );
 }
+
+ListCars.propTypes = {
+    cars: PropTypes.array.isRequired,
+};

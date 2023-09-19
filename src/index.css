@@ -8,7 +8,8 @@
     --gray-text: rgba(18, 20, 23, 0.5);
     --gray-background-color: #f7f7fb;
     --white: #fff;
-    color-scheme: light dark;
+    --color-other-information: rgba(18, 20, 23, 0.5);
+    --color-other-information-row: rgba(18, 20, 23, 0.10);
     color: var(--black);
     background-color: var(--white);
 

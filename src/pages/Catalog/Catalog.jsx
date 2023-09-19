@@ -1,5 +1,17 @@
+import { useDispatch } from "react-redux";
+import { featchCars } from "../../redux/cars/operations";
+import { useEffect } from "react";
+import ListCars from "../../Components/ListCars/ListCars";
+import { WrapperCatalog } from "./Catalog.styled";
+
 export default function Catalog() {
-  return (
-    <div>Catalog</div>
-  )
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(featchCars());
+    }, [dispatch]);
+    return (
+        <WrapperCatalog>
+            <ListCars />
+        </WrapperCatalog>
+    );
 }

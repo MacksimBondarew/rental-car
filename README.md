@@ -42,6 +42,25 @@ Are you ready to embark on your next adventure? Don't wait—book your rental ca
 
 ## Contact Us
 
-If you have any questions or need assistance, please don't hesitate to contact our customer service team at [contact email/phone]. We're here to help you get the most out of your rental car.
+If you have any questions or need assistance, please don't hesitate to contact our customer service team at phone: +380730000000 We're here to help you get the most out of your rental car.
+
+## Home Page
+
+![Home Page](url_to_home_page_image)
+
+**Welcome to our Home Page**, where your car rental journey begins. Explore our wide range of vehicles and discover the convenience and flexibility of renting with us.
+
+## Catalog
+
+![Catalog](url_to_catalog_image)
+
+**Browse our extensive catalog** of rental cars, from sleek sedans to rugged SUVs. Find the perfect vehicle for your next adventure and start your reservation today.
+
+## Favorites
+
+![Favorites](url_to_favorites_image)
+
+**Create your list of favorite cars** and save them for easy access. Whether you're planning multiple trips or want to compare options, our Favorites feature makes it simple.
+
 
 Happy driving!

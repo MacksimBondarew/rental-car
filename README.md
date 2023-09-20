@@ -46,19 +46,19 @@ If you have any questions or need assistance, please don't hesitate to contact o
 
 ## Home Page
 
-![Home Page](url_to_home_page_image)
+![Home Page](./src/images/home.png)
 
 **Welcome to our Home Page**, where your car rental journey begins. Explore our wide range of vehicles and discover the convenience and flexibility of renting with us.
 
 ## Catalog
 
-![Catalog](url_to_catalog_image)
+![Catalog](./src/images/catalog.png)
 
 **Browse our extensive catalog** of rental cars, from sleek sedans to rugged SUVs. Find the perfect vehicle for your next adventure and start your reservation today.
 
 ## Favorites
 
-![Favorites](url_to_favorites_image)
+![Favorites](./src/images/favorite.png)
 
 **Create your list of favorite cars** and save them for easy access. Whether you're planning multiple trips or want to compare options, our Favorites feature makes it simple.
 

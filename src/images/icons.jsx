@@ -448,3 +448,30 @@ export const CloseModal = (
         <path d="M6 6L18 18" stroke="#121417" />
     </svg>
 );
+
+export const RowBottom = (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+    >
+        <path d="M5 7.5L10 12.5L15 7.5" stroke="#121417" />
+    </svg>
+);
+
+export const RowTop = (
+    <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+    >
+        <path
+            d="M5 12.5L10 7.5L15 12.5"
+            stroke="#121417"
+        />
+    </svg>
+);
